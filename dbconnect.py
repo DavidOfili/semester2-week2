@@ -4,7 +4,6 @@ connection = sqlite3.connect("university.db")
 
 cursor = connection.cursor()
 result = cursor.execute("SELECT * FROM Department")
-# we know there are multiple rows in the result
+
 for data in result:
     print(data)
-
